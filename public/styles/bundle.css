@@ -1,0 +1,22 @@
+body {
+  background-color: #E0E0E0; }
+
+.hello {
+  color: #f00; }
+
+.box {
+  padding: 30px !important;
+  margin-top: 30px !important; }
+
+.mainTitle {
+  color: #ffffff;
+  text-align: center; }
+
+.marginTop30 {
+  margin-top: 30px; }
+
+.marginRight10 {
+  margin-right: 10px; }
+
+h1 {
+  font-size: 24px !important; }

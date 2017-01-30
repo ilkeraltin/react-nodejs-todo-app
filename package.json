@@ -1,0 +1,73 @@
+{
+  "name": "test-candidates",
+  "version": "0.0.1",
+  "description": "test back - front",
+  "eslintConfig": {
+    "extends": "travix"
+  },
+  "main": "server.js",
+  "devServer": {
+    "hot": true,
+    "inline": true,
+    "port": 8080,
+    "historyApiFallback": true
+  },
+  "scripts": {
+    "test": "mocha --require ignore-styles -w test/helpers/browser.js test/*.spec.js",
+    "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
+    "start": "node server.js"
+  },
+  "externals": {
+    "cheerio": "window",
+    "react/lib/ExecutionEnvironment": true,
+    "react/lib/ReactContext": true
+  },
+  "keywords": [
+    "test",
+    "travix"
+  ],
+  "author": "spartans",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "material-ui": "^0.16.7",
+    "react": "^15.4.2",
+    "react-addons-update": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4",
+    "redux-persist": "^4.1.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.7.1",
+    "eslint": "^3.14.1",
+    "eslint-config-travix": "^2.3.1",
+    "eslint-plugin-babel": "^4.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.9.0",
+    "file-loader": "^0.10.0",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^9.9.1",
+    "mocha": "^3.2.0",
+    "node-sass": "^4.4.0",
+    "react-addons-test-utils": "^15.4.2",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
